@@ -41,29 +41,29 @@ html {
   0%,15% {
     --a: 135deg;
     --p: 20%;
-    --c1: #3B8183;
-    --c2: #FAD089;
+    --c1: #5D8BF4;
+    --c2: #F7F7F7;
     background-position: 0 0,var(--s) var(--s);
   }
   45%,50% {
     --a: 90deg;
     --p: 25%;
-    --c1: #3B8183;
-    --c2: #FAD089;
+    --c1: #5D8BF4;
+    --c2: #F7F7F7;
     background-position: 0 0,var(--s) var(--s);
   }
   50.01%,55% {
     --a: 90deg;
     --p: 25%;
-    --c2: #3B8183;
-    --c1: #FAD089;
+    --c2: #5D8BF4;
+    --c1: #F7F7F7;
     background-position: var(--s) 0,0 var(--s);
   }
   85%,100% {
     --a: 135deg;
     --p: 20%;
-    --c2: #3B8183;
-    --c1: #FAD089;
+    --c2: #5D8BF4;
+    --c1: #F7F7F7;
     background-position: var(--s) 0,0 var(--s);
   }
 }
@@ -81,11 +81,12 @@ body {
 }
 
 .container {
-    background-color: #f7f7f7;
+    background-color: white;
     padding: 2rem;
     border-radius: 32px;
     right: 0px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
 }
 
 .main-layout {
