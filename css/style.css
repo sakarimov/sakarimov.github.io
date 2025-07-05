@@ -15,35 +15,40 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.profile-container {
+.main-layout {
     display: flex;
-    align-items: center;
     gap: 3rem;
     margin-bottom: 2rem;
 }
 
-@media (max-width: 600px) {
-    .profile-container {
-        flex-direction: column;
-        gap: 1.5rem;
-        text-align: center;
-    }
-    .profile-image {
-        width: 180px;
-        height: 180px;
-    }
+.illustration-container {
+    flex: 0 0 250px;
+}
+
+.content-container {
+    flex: 1;
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.header-text {
-    flex: 1;
+@media (max-width: 600px) {
+    .main-layout {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .illustration-container {
+        text-align: center;
+    }
+    .profile-image {
+        max-width: 180px;
+    }
 }
 
 h1 {
